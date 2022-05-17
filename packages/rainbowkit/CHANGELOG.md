@@ -1,5 +1,11 @@
 # @soundxyz/rainbowkit
 
+## 0.1.0
+
+### Minor Changes
+
+- fe551d7: Move modal opening to a context so we can expose `openConnectModal` and `connectModalOpen` as a hook `useConnectModal`
+
 ## 0.0.1
 
 ### Patch Changes
