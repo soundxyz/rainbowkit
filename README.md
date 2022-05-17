@@ -16,7 +16,7 @@ RainbowKit is a [React](https://reactjs.org/) library that makes it easy to add 
 
 Install RainbowKit along with [wagmi](https://wagmi.sh) and its [ethers](https://docs.ethers.io) peer dependency.
 
-`npm install @rainbow-me/rainbowkit wagmi ethers`
+`npm install @soundxyz/rainbowkit wagmi ethers`
 
 ## Documentation
 
@@ -37,5 +37,6 @@ Please follow our [contributing guidelines](./.github/CONTRIBUTING.md).
 ## License
 
 Licensed under the MIT License, Copyright © 2022-present [Rainbow](https://rainbow.me).
+Licensed under the MIT License, Copyright © 2022-present [Sound.xyz](https://sound.xyz).
 
 See [LICENSE](./LICENSE) for more information.

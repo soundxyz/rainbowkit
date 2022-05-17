@@ -20,12 +20,12 @@
     "release:verify-git": "git diff --exit-code && git rev-parse --abbrev-ref HEAD | grep \"main\"",
     "release:build": "pnpm clean && pnpm lint && pnpm test && MINIFY_CSS=true pnpm build --recursive && cp README.md packages/rainbowkit/README.md",
     "release:test": "pnpm release:build && pnpm dev --filter example",
-    "ci:example": "pnpm prepare --filter=@rainbow-me/rainbowkit && pnpm build --filter=example",
-    "ci:site": "pnpm prepare --filter=@rainbow-me/rainbowkit && pnpm build --filter=site"
+    "ci:example": "pnpm prepare --filter=@soundxyz/rainbowkit && pnpm build --filter=example",
+    "ci:site": "pnpm prepare --filter=@soundxyz/rainbowkit && pnpm build --filter=site"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rainbow-me/rainbowkit.git"
+    "url": "git+https://github.com/soundxyz/rainbowkit.git"
   },
   "license": "MIT",
   "devDependencies": {
@@ -42,8 +42,8 @@
     "@types/node": "^16.11.11",
     "@types/react": "^18.0.5",
     "@types/react-dom": "^18.0.1",
-    "@typescript-eslint/eslint-plugin": "^5.5.0",
-    "@typescript-eslint/parser": "^5.5.0",
+    "@typescript-eslint/eslint-plugin": "5.24.0",
+    "@typescript-eslint/parser": "^5.24.0",
     "@vanilla-extract/esbuild-plugin": "^2.0.0",
     "@vanilla-extract/vite-plugin": "^3.1.2",
     "@wagmi/core": "^0.2.1",
@@ -65,6 +65,9 @@
     "typescript": "~4.5.2",
     "vitest": "^0.5.0",
     "wagmi": "^0.3.5"
+  },
+  "resolutions": {
+    "@typescript-eslint/typescript-estree": "5.9.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
