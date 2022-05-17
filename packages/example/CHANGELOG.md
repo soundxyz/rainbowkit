@@ -1,5 +1,20 @@
 # example
 
+## 0.0.4
+
+### Patch Changes
+
+- Updated dependencies [85be3f8]
+- Updated dependencies [4062169]
+- Updated dependencies [b1b09c5]
+- Updated dependencies [39fa4cb]
+- Updated dependencies [127690a]
+- Updated dependencies [5213855]
+- Updated dependencies [209aa43]
+- Updated dependencies [be6ee16]
+- Updated dependencies [c4e7f67]
+  - @soundxyz/rainbowkit@0.0.1
+
 ## 0.0.3
 
 ### Patch Changes
