@@ -1,4 +1,4 @@
-import '@rainbow-me/rainbowkit/styles.css';
+import '@soundxyz/rainbowkit/styles.css';
 import { Provider } from 'components/Provider/Provider';
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';

@@ -1,5 +1,5 @@
 import './global.css';
-import '@rainbow-me/rainbowkit/styles.css';
+import '@soundxyz/rainbowkit/styles.css';
 import {
   apiProvider,
   configureChains,
@@ -10,7 +10,7 @@ import {
   midnightTheme,
   RainbowKitProvider,
   wallet,
-} from '@rainbow-me/rainbowkit';
+} from '@soundxyz/rainbowkit';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import React, { useEffect, useState } from 'react';

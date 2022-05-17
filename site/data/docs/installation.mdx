@@ -12,7 +12,7 @@ description: Get up and running with RainbowKit
 Install RainbowKit and its peer dependencies, [wagmi](https://wagmi-xyz.vercel.app/) and [ethers](https://docs.ethers.io).
 
 ```bash
-npm install @rainbow-me/rainbowkit wagmi ethers
+npm install @soundxyz/rainbowkit wagmi ethers
 ```
 
 > Note: RainbowKit is a [React](https://reactjs.org/) library.
@@ -22,14 +22,14 @@ npm install @rainbow-me/rainbowkit wagmi ethers
 Import RainbowKit, wagmi, and ethers.
 
 ```tsx
-import '@rainbow-me/rainbowkit/styles.css';
+import '@soundxyz/rainbowkit/styles.css';
 
 import {
   apiProvider,
   configureChains,
   getDefaultWallets,
   RainbowKitProvider,
-} from '@rainbow-me/rainbowkit';
+} from '@soundxyz/rainbowkit';
 import { chain, createClient, WagmiProvider } from 'wagmi';
 ```
 
@@ -82,7 +82,7 @@ const App = () => {
 Then, in your app, import and render the `ConnectButton` component.
 
 ```tsx
-import { ConnectButton } from '@rainbow-me/rainbowkit';
+import { ConnectButton } from '@soundxyz/rainbowkit';
 
 export const YourApp = () => {
   return <ConnectButton />;

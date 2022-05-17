@@ -4,7 +4,7 @@ import {
   connectorsForWallets,
   getDefaultWallets,
   wallet,
-} from '@rainbow-me/rainbowkit';
+} from '@soundxyz/rainbowkit';
 import React from 'react';
 import { chain, createClient, Provider as WagmiProvider } from 'wagmi';
 

@@ -1,4 +1,4 @@
-# @rainbow-me/rainbowkit
+# @soundxyz/rainbowkit
 
 ## 0.1.0
 
@@ -15,8 +15,8 @@
   **Migration guide**
 
   ```diff
-  -import { getDefaultWallets, connectorsForWallets } from '@rainbow-me/rainbowkit';
-  +import { getDefaultWallets } from '@rainbow-me/rainbowkit';
+  -import { getDefaultWallets, connectorsForWallets } from '@soundxyz/rainbowkit';
+  +import { getDefaultWallets } from '@soundxyz/rainbowkit';
 
   -const wallets = getDefaultWallets({
   +const { connectors } = getDefaultWallets({
@@ -29,7 +29,7 @@
   If you were modifying the wallet list returned from `getDefaultWallets`, you’ll need to destructure the `wallets` property from the returned object.
 
   ```diff
-  import { getDefaultWallets, connectorsForWallets } from '@rainbow-me/rainbowkit';
+  import { getDefaultWallets, connectorsForWallets } from '@soundxyz/rainbowkit';
 
   -const wallets = getDefaultWallets({
   +const { wallets } = getDefaultWallets({
@@ -56,7 +56,7 @@
   When using a custom accent color:
 
   ```tsx
-  import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+  import { RainbowKitProvider, darkTheme } from '@soundxyz/rainbowkit';
 
   const App = () => {
     return (
@@ -75,7 +75,7 @@
   When using a built-in accent color preset:
 
   ```tsx
-  import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+  import { RainbowKitProvider, darkTheme } from '@soundxyz/rainbowkit';
 
   const App = () => {
     return (
@@ -236,7 +236,7 @@
   First enable the `showRecentTransactions` option on `RainbowKitProvider`.
 
   ```tsx
-  import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+  import { RainbowKitProvider } from '@soundxyz/rainbowkit';
 
   const App = () => {
     return (
@@ -250,7 +250,7 @@
   Transactions can then be registered with RainbowKit using the `useAddRecentTransaction` hook.
 
   ```tsx
-  import { useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+  import { useAddRecentTransaction } from '@soundxyz/rainbowkit';
 
   export default () => {
     const addRecentTransaction = useAddRecentTransaction();
@@ -275,7 +275,7 @@
   By default the transaction will be considered completed once a single block has been mined on top of the block in which the transaction was mined, but this can be configured by specifying a custom `confirmations` value.
 
   ```tsx
-  import { useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+  import { useAddRecentTransaction } from '@soundxyz/rainbowkit';
 
   export default () => {
     const addRecentTransaction = useAddRecentTransaction();
@@ -325,7 +325,7 @@
     RainbowKitProvider,
     Chain,
     getDefaultWallets,
-  } from '@rainbow-me/rainbowkit';
+  } from '@soundxyz/rainbowkit';
   import { createClient, WagmiProvider, chain } from 'wagmi';
   import { providers } from 'ethers';
 
@@ -380,7 +380,7 @@
     configureChains,
     getDefaultWallets,
     RainbowKitProvider,
-  } from '@rainbow-me/rainbowkit';
+  } from '@soundxyz/rainbowkit';
   import { createClient, WagmiProvider, chain } from 'wagmi';
   import { providers } from 'ethers';
 
@@ -532,7 +532,7 @@
   **Example usage**
 
   ```tsx
-  import { wallet, WalletList } from '@rainbow-me/rainbowkit';
+  import { wallet, WalletList } from '@soundxyz/rainbowkit';
 
   const wallets: WalletList = [
     {
