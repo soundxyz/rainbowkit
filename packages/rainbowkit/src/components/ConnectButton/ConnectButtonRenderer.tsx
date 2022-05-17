@@ -1,10 +1,4 @@
-import React, {
-  ReactNode,
-  useCallback,
-  useContext,
-  useEffect,
-  useState,
-} from 'react';
+import React, { ReactNode, useCallback, useContext, useEffect } from 'react';
 import {
   useAccount,
   useBalance,
@@ -25,22 +19,14 @@ import { ChainModal } from '../ChainModal/ChainModal';
 import { ConnectModal } from '../ConnectModal/ConnectModal';
 import { preloadAssetsIcon } from '../Icons/Assets';
 import { preloadLoginIcon } from '../Icons/Login';
+import { ConnectModalContext } from '../RainbowKitProvider/ConnectModalContext';
 import {
   useRainbowKitChains,
   useRainbowKitChainsById,
 } from '../RainbowKitProvider/RainbowKitChainContext';
 import { ShowRecentTransactionsContext } from '../RainbowKitProvider/ShowRecentTransactionsContext';
-import { ConnectModalContext } from '../RainbowKitProvider/ConnectModalContext';
 import { formatAddress } from './formatAddress';
 import { formatENS } from './formatENS';
-
-const useBooleanState = (initialValue: boolean) => {
-  const [value, setValue] = useState(initialValue);
-  const setTrue = useCallback(() => setValue(true), []);
-  const setFalse = useCallback(() => setValue(false), []);
-
-  return { setFalse, setTrue, value };
-};
 
 export interface ConnectButtonRendererProps {
   children: (renderProps: {
@@ -78,15 +64,15 @@ export function ConnectButtonRenderer({
 }: ConnectButtonRendererProps) {
   const mounted = useIsMounted();
   const {
+    accountModalOpen,
+    chainModalOpen,
+    closeAccountModal,
+    closeChainModal,
+    closeConnectModal,
+    connectModalOpen,
     openAccountModal,
     openChainModal,
     openConnectModal,
-    accountModalOpen,
-    chainModalOpen,
-    connectModalOpen,
-    closeConnectModal,
-    closeAccountModal,
-    closeChainModal,
   } = useContext(ConnectModalContext);
 
   const { data: accountData } = useAccount();

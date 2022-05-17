@@ -42,15 +42,15 @@ export function ConnectModalProvider({ children }: { children: ReactNode }) {
   return (
     <ConnectModalContext.Provider
       value={{
-        openAccountModal,
-        openChainModal,
-        openConnectModal,
-        chainModalOpen,
         accountModalOpen,
-        connectModalOpen,
+        chainModalOpen,
         closeAccountModal,
         closeChainModal,
         closeConnectModal,
+        connectModalOpen,
+        openAccountModal,
+        openChainModal,
+        openConnectModal,
       }}
     >
       {children}

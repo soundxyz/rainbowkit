@@ -4,6 +4,7 @@ import { ThemeVars } from '../../css/sprinkles.css';
 import { lightTheme } from '../../themes/lightTheme';
 import { TransactionStoreProvider } from '../../transactions/TransactionStoreContext';
 import { AppContext, defaultAppInfo } from './AppContext';
+import { ConnectModalProvider } from './ConnectModalProvider';
 import { CoolModeContext } from './CoolModeContext';
 import {
   RainbowKitChain,
@@ -11,7 +12,6 @@ import {
 } from './RainbowKitChainContext';
 import { ShowRecentTransactionsContext } from './ShowRecentTransactionsContext';
 import { provideRainbowKitChains } from './provideRainbowKitChains';
-import { ConnectModalProvider } from './ConnectModalProvider';
 
 const ThemeIdContext = createContext<string | undefined>(undefined);
 

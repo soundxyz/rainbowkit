@@ -13,13 +13,13 @@ type ConnectModalContextType = {
 };
 
 export const ConnectModalContext = createContext<ConnectModalContextType>({
-  openAccountModal: () => {},
-  closeAccountModal: () => {},
-  openChainModal: () => {},
-  closeChainModal: () => {},
-  closeConnectModal: () => {},
-  openConnectModal: () => {},
   accountModalOpen: false,
   chainModalOpen: false,
+  closeAccountModal: () => {},
+  closeChainModal: () => {},
+  closeConnectModal: () => {},
   connectModalOpen: false,
+  openAccountModal: () => {},
+  openChainModal: () => {},
+  openConnectModal: () => {},
 });
