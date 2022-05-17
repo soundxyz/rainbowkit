@@ -32,7 +32,7 @@
 - Updated dependencies [3295746]
 - Updated dependencies [9d351d0]
 - Updated dependencies [13fa857]
-  - @rainbow-me/rainbowkit@0.1.0
+  - @soundxyz/rainbowkit@0.1.0
 
 ## 0.0.2
 
@@ -53,11 +53,11 @@
 - Updated dependencies [c174e12]
 - Updated dependencies [baf998c]
 - Updated dependencies [eaa5bf6]
-  - @rainbow-me/rainbowkit@0.0.2
+  - @soundxyz/rainbowkit@0.0.2
 
 ## 0.0.1
 
 ### Patch Changes
 
 - Updated dependencies [ce3f499]
-  - @rainbow-me/rainbowkit@0.0.1
+  - @soundxyz/rainbowkit@0.0.1

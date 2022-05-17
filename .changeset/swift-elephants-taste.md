@@ -1,5 +1,5 @@
 ---
-'@rainbow-me/rainbowkit': patch
+'@soundxyz/rainbowkit': patch
 ---
 
 Add line-height values to all text styles

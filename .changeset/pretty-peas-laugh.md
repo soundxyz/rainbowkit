@@ -1,5 +1,5 @@
 ---
-'@rainbow-me/rainbowkit': patch
+'@soundxyz/rainbowkit': patch
 ---
 
 Add `ethers` to peer dependencies to ensure consistent versioning with wagmi

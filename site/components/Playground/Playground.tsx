@@ -6,7 +6,7 @@ import {
   lightTheme,
   midnightTheme,
   RainbowKitProvider,
-} from '@rainbow-me/rainbowkit';
+} from '@soundxyz/rainbowkit';
 import clsx from 'clsx';
 import { Box } from 'components/Box/Box';
 import { MeshGradient } from 'components/MeshGradient/MeshGradient';

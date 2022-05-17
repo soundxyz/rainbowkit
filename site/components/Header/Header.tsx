@@ -3,7 +3,7 @@ import {
   darkTheme,
   lightTheme,
   RainbowKitProvider,
-} from '@rainbow-me/rainbowkit';
+} from '@soundxyz/rainbowkit';
 import { Badge } from 'components/Badge/Badge';
 import { Box } from 'components/Box/Box';
 import { chains } from 'components/Provider/Provider';

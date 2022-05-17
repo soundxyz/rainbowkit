@@ -1,5 +1,5 @@
 ---
-'@rainbow-me/rainbowkit': patch
+'@soundxyz/rainbowkit': patch
 ---
 
 Increase specificity of RainbowKit styles to avoid app styles overriding them

@@ -1,5 +1,5 @@
 ---
-'@rainbow-me/rainbowkit': patch
+'@soundxyz/rainbowkit': patch
 ---
 
 Fix usage of quotes in custom theme font values

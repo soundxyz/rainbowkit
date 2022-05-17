@@ -1,4 +1,4 @@
-import { ConnectButton, useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+import { ConnectButton, useAddRecentTransaction } from '@soundxyz/rainbowkit';
 
 import React, { ComponentProps, useEffect, useState } from 'react';
 import {
