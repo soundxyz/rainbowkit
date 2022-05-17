@@ -9,6 +9,7 @@ export { useAddRecentTransaction } from './transactions/useAddRecentTransaction'
 export type { Wallet, WalletList } from './wallets/Wallet';
 export type { Chain } from './components/RainbowKitProvider/RainbowKitChainContext';
 export type { Theme } from './components/RainbowKitProvider/RainbowKitProvider';
+export { useConnectModal } from './components/RainbowKitProvider/useConnectModal';
 export { lightTheme } from './themes/lightTheme';
 export { darkTheme } from './themes/darkTheme';
 export { midnightTheme } from './themes/midnightTheme';

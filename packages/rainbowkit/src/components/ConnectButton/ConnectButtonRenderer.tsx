@@ -13,6 +13,7 @@ import {
   useEnsName,
   useNetwork,
 } from 'wagmi';
+
 import { useIsMounted } from '../../hooks/useIsMounted';
 import { useRecentTransactions } from '../../transactions/useRecentTransactions';
 import { isMobile } from '../../utils/isMobile';
@@ -29,6 +30,7 @@ import {
   useRainbowKitChainsById,
 } from '../RainbowKitProvider/RainbowKitChainContext';
 import { ShowRecentTransactionsContext } from '../RainbowKitProvider/ShowRecentTransactionsContext';
+import { ConnectModalContext } from '../RainbowKitProvider/ConnectModalContext';
 import { formatAddress } from './formatAddress';
 import { formatENS } from './formatENS';
 
@@ -75,6 +77,17 @@ export function ConnectButtonRenderer({
   children,
 }: ConnectButtonRendererProps) {
   const mounted = useIsMounted();
+  const {
+    openAccountModal,
+    openChainModal,
+    openConnectModal,
+    accountModalOpen,
+    chainModalOpen,
+    connectModalOpen,
+    closeConnectModal,
+    closeAccountModal,
+    closeChainModal,
+  } = useContext(ConnectModalContext);
 
   const { data: accountData } = useAccount();
 
@@ -112,31 +125,6 @@ export function ConnectButtonRenderer({
   const hasPendingTransactions =
     useRecentTransactions().some(({ status }) => status === 'pending') &&
     showRecentTransactions;
-
-  const {
-    setFalse: closeConnectModal,
-    setTrue: openConnectModal,
-    value: connectModalOpen,
-  } = useBooleanState(false);
-
-  const {
-    setFalse: closeAccountModal,
-    setTrue: openAccountModal,
-    value: accountModalOpen,
-  } = useBooleanState(false);
-
-  const {
-    setFalse: closeChainModal,
-    setTrue: openChainModal,
-    value: chainModalOpen,
-  } = useBooleanState(false);
-
-  const hasAccountData = Boolean(accountData);
-  useEffect(() => {
-    closeConnectModal();
-    closeAccountModal();
-    closeChainModal();
-  }, [hasAccountData, closeConnectModal, closeAccountModal, closeChainModal]);
 
   const walletConnectors = useWalletConnectors();
 
