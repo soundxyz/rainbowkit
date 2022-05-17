@@ -141,7 +141,7 @@
   If you wish to maintain the existing behavior, a new `mounted` boolean is passed to your render function which allows you to render `null` manually when `mounted` is `false`.
 
   ```diff
-  import { ConnectButton } from '@rainbow-me/rainbowkit';
+  import { ConnectButton } from '@soundxyz/rainbowkit';
 
   export default () => (
     <ConnectButton.Custom>
