@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { ConnectModalContext } from './ConnectModalContext';
 
 export const useConnectModal = () => {
-  const { connectModalOpen, openConnectModal } =
+  const { connectModalOpen, openConnectModal, closeConnectModal } =
     useContext(ConnectModalContext);
-  return { connectModalOpen, openConnectModal };
+  return { connectModalOpen, openConnectModal, closeConnectModal };
 };
