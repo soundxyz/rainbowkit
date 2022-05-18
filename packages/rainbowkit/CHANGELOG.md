@@ -1,5 +1,12 @@
 # @soundxyz/rainbowkit
 
+## 0.1.1
+
+### Patch Changes
+
+- 09517bf: export `closeConnectModal` part of `useModal` hook
+- 7ec04ef: Export ConnectModal component
+
 ## 0.1.0
 
 ### Minor Changes
