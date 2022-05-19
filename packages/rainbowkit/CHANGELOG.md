@@ -1,5 +1,12 @@
 # @soundxyz/rainbowkit
 
+## 0.2.0
+
+### Minor Changes
+
+- 1d45da6: add `onConnectModal` callback
+- 7e20467: no need to export ConnectModal
+
 ## 0.1.1
 
 ### Patch Changes
