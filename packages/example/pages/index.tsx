@@ -127,7 +127,12 @@ const Example = () => {
 
       <div>
         <h3 style={{ fontFamily: 'sans-serif' }}>Custom buttons</h3>
-        <ConnectButton.Custom>
+        <ConnectButton.Custom
+          onConnectModal={() => {
+            // eslint-disable-next-line no-console
+            console.log('onConnectModal');
+          }}
+        >
           {({
             account,
             chain,

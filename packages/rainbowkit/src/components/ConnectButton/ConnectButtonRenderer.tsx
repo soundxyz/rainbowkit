@@ -57,10 +57,12 @@ export interface ConnectButtonRendererProps {
     chainModalOpen: boolean;
     connectModalOpen: boolean;
   }) => ReactNode;
+  onConnectModal?: () => void;
 }
 
 export function ConnectButtonRenderer({
   children,
+  onConnectModal,
 }: ConnectButtonRendererProps) {
   const mounted = useIsMounted();
   const {
@@ -172,7 +174,11 @@ export function ConnectButtonRenderer({
         openConnectModal,
       })}
 
-      <ConnectModal onClose={closeConnectModal} open={connectModalOpen} />
+      <ConnectModal
+        onClose={closeConnectModal}
+        onConnect={onConnectModal}
+        open={connectModalOpen}
+      />
       <AccountModal
         accountData={accountData}
         balanceData={balanceData}
